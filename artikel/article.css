@@ -1,0 +1,125 @@
+/* Reset dasar */
+body,
+h1,
+h2,
+h3,
+p,
+a {
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gaya umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar custom */
+.navbar-custom {
+  background-color: #343a40;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Gaya konten */
+.content {
+  padding-top: 70px; /* Ruang untuk menghindari navbar fixed */
+  margin: 20px;
+}
+
+/* Gaya artikel */
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.article-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 500px; /* Ukuran maksimal gambar di desktop */
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.image-caption {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Gaya footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Gaya responsif */
+@media (max-width: 992px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .article-title {
+    font-size: 20px;
+  }
+
+  .article-image {
+    max-width: 100%;
+  }
+
+  .navbar-toggler {
+    background-color: gray;
+  }
+}
+
+/* Gaya untuk dropdown kategori pada mobile */
+@media (max-width: 576px) {
+  .dropdown-menu {
+    background-color: white;
+    border: none;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .dropdown-item {
+    color: black !important;
+  }
+}

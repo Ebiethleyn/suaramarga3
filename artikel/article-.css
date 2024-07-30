@@ -1,0 +1,179 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Style untuk Navbar */
+.navbar-custom {
+  background-color: maroon;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  margin: 0 auto; /* Centering the brand name */
+  font-size: 24px;
+  color: white !important;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-left: 20px; /* Adding space between menu items */
+}
+
+.navbar-toggler {
+  color: white;
+  border: none;
+}
+
+/* Style untuk Kategori Menu */
+.category-menu {
+  font-size: 14px;
+  background-color: white;
+  position: absolute;
+  top: 60px; /* Adjusted for navbar height */
+  width: 100%;
+  text-align: center;
+  display: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.category-menu a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.category-menu a:hover {
+  background-color: #f8f9fa;
+}
+
+/* Style untuk Konten */
+.content {
+  padding: 80px 0 20px; /* Adjusted for fixed navbar */
+  background-color: #f9f9f9;
+}
+
+.article-container {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.article-title a {
+  color: black;
+  text-decoration: none;
+}
+
+.article-title a:hover {
+  text-decoration: underline;
+}
+
+.article-meta {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.article-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.article-caption {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Konten untuk Desktop */
+@media (min-width: 992px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .article-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .article-image {
+    flex: 1;
+    max-width: 40%;
+  }
+
+  .article-content {
+    flex: 2;
+  }
+}
+
+/* Style untuk Footer */
+.footer {
+  padding: 20px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Responsif untuk Mobile */
+@media (max-width: 992px) {
+  .navbar-toggler {
+    color: white;
+  }
+
+  .category-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+  }
+
+  .category-menu.active {
+    display: block;
+  }
+}

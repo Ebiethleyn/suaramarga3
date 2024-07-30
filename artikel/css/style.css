@@ -1,0 +1,10 @@
+* {
+  text-decoration: none;
+}
+
+.content {
+  background-color: aliceblued;
+  color: black;
+  top: 2rem;
+  padding: 2rem 1rem;
+}

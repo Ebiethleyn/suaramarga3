@@ -1,0 +1,102 @@
+/* anggotaBiasa.css */
+
+/* Styling dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+h2 {
+    margin-top: 0;
+}
+
+/* Tabel styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+/* Header tabel styling */
+table thead th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Baris tabel styling */
+table tbody tr {
+    border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Sel tabel styling */
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* Styling untuk gambar */
+table td img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Back button styling */
+.btn-back {
+    margin-top: 20px;
+    background-color: #6c757d;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}

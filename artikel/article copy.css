@@ -1,0 +1,189 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Navbar */
+.header {
+  background-color: #800000; /* Warna merah marun */
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s;
+}
+
+.header.scrolled {
+  top: -50px; /* Efek scroll untuk navbar */
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Content */
+.content {
+  padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+  padding: 20px 0;
+  background-color: #fff;
+  flex: 1;
+}
+
+.content h2,
+.content h3 {
+  color: #000; /* Warna hitam untuk judul artikel */
+  text-decoration: none; /* Hilangkan garis bawah pada judul */
+  margin-bottom: 15px;
+}
+
+.content h3 {
+  font-size: 22px;
+}
+
+.content p a {
+  color: #555;
+  text-decoration: none; /* Hilangkan garis bawah pada nama penulis */
+}
+
+.content p a:hover {
+  text-decoration: underline;
+}
+
+.article {
+  margin-bottom: 30px; /* Jarak antar artikel */
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.article:last-child {
+  border-bottom: none;
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.image-caption {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #808080; /* Warna abu-abu */
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer p,
+.footer h6,
+.footer a {
+  margin: 5px 0;
+  color: #fff;
+  text-decoration: none; /* Hilangkan garis bawah pada link */
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    display: flex; /* Tampilkan menu di bawah navbar di mobile */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .footer {
+    font-size: 14px; /* Ukuran font lebih kecil di mobile */
+  }
+}

@@ -1,0 +1,152 @@
+/* CSS untuk dashboard.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+/* .header {
+  background-color: #8b0000; /* Warna merah marun */
+/* padding: 15px 0; */
+/* text-align: center; */
+/* } */
+
+/* .header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .header h1 { */
+/* color: gold; */
+/* font-size: 24px; */
+/* margin: 0; */
+/* font-family: "Arial", sans-serif; */
+/* }
+
+.menu-icon {
+  /* font-size: 24px; */
+/* color: #ffffff; Warna putih */
+/* cursor: pointer; */
+/* display: none; Tampilkan hanya pada perangkat mobile */
+/* } */
+
+.header {
+  background-color: #8b0000; /* Warna merah marun */
+  padding: 15px 0;
+  text-align: center;
+  position: relative; /* Memungkinkan positioning absolute di dalamnya */
+  display: flex;
+  justify-content: center; /* Memusatkan elemen secara horizontal */
+  align-items: center; /* Memusatkan elemen secara vertikal */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between; /* Untuk memberikan ruang antara elemen */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  color: gold;
+  font-size: 24px;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  flex: 1; /* Membuat elemen ini memenuhi ruang yang tersedia */
+  text-align: center; /* Memastikan teks berada di tengah */
+}
+
+/* Content */
+.content {
+  background-color: #ffffff; /* Background putih */
+  padding: 20px;
+  min-height: 80vh; /* Menjaga agar konten tidak terlalu pendek */
+}
+
+.content .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8b0000; /* Warna merah marun */
+  color: #ffffff; /* Warna putih */
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #a52a2a; /* Warna merah bata */
+}
+
+/* Footer */
+.footer {
+  background-color: gray; /* Warna abu-abu */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #ffd700; /* Warna emas */
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    display: block; /* Tampilkan pada perangkat mobile */
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
